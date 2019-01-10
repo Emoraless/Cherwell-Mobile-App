@@ -50,11 +50,11 @@
 		</div>
     <div id="mySidenav" class="sidenav">
 			<a id='sidebar-link' href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
-			<a id='sidebar-link' href="https://servicesapps.ou.edu/mobileapp">Home</a>
-			<a id='sidebar-link' href="https://servicesapps.ou.edu/mobileapp/incident">My Incidents</a>
-			<a id='sidebar-link' href="https://servicesapps.ou.edu/mobileapp/task">My Tasks</a>
-      <a id='sidebar-link' target="_blank" href="https://www.surveymonkey.com/r/NBVY2D5">Feedback</a>
-			<a id='sidebar-link' href="https://servicesapps.ou.edu/mobileapp/Sources/logout.php">Logout</a>
+			<a id='sidebar-link' href="WEB_URL">Home</a>
+			<a id='sidebar-link' href="WEB_URL/incident">My Incidents</a>
+			<a id='sidebar-link' href="WEB_URL/task">My Tasks</a>
+      <a id='sidebar-link' target="_blank" href="https://www.surveymonkey.com/">Feedback</a>
+			<a id='sidebar-link' href="WEB_URL/Sources/logout.php">Logout</a>
 		</div>
 		<!-- End page content -->
 		<script>
