@@ -1,0 +1,70 @@
+<div class=header-content>
+	<div class='backbutton' style='text-align:center'>
+		<input type='button' class = 'w2-button' value='< Back' style='width: 20%' onclick='goBack(false)'/>
+		<table id='titlePage'>
+			<tr>
+				<td height='55' id='td00'></td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<table id='breadcrumbs' style='width:100%'>
+		<tr>
+			<td height='50' id='td01'></td>
+			<td height='50' id='td02'></td>
+			<td height='50' id='td03'></td>
+		</tr>
+	</table>
+<br>
+</div>
+<!-- Textbox for the OUNetID -->
+<div class='uniqueArea' style='margin-left:2.5%;width:95%;display:inline-block;'>
+	<div class='uniqueArea' style='width:100%;float:left;'>
+		<label for='fourfour' style="color: white;font-family:Arial;font-size:12px;">Affected User OUNetID*</label>
+		<input type='text' id='fourfour' class='textBox' name='username' style='background-color:rgba(0,0,0,.4)' maxlength='8'/>
+	</div>
+</div><br>
+<!-- Textbox for the Short Description -->
+<div class='uniqueArea' style='margin-left:2.5%;width:95%;'>
+	<div class='uniqueArea'>
+	<label for='shorty' style="color: white;font-family:Arial;font-size:12px;">Short Description*:</label>
+		<input type='text' id='shorty' class='textBox' name='shorty' style='background-color:rgba(0,0,0,.4)' maxlength='280'/>
+	</div>
+</div><br>
+<!-- Textbox for the Description -->
+<div class='uniqueArea' style='margin-left:2.5%;width:95%;display:inline-block;'>
+	<div class='uniqueArea'>
+		<label for='description' style="color: white;font-family:Arial;font-size:12px;">Long Description*:</label>
+		<input type='text' id='description' class='textBox' name='description' placeholder='On-site Quick-Ticket'style='background-color:rgba(0,0,0,.4)' maxlength='280'/>
+	</div>
+</div><br>
+<!-- Textbox for the Phone -->
+<div class='uniqueArea' style='margin-left:2.5%;width:95%;display:inline-block;'>
+	<div class='uniqueArea' style='width:35%;float:left;'>
+		<label for='phone' style="color: white;font-family:Arial;font-size:12px;">Phone:</label>
+		<input type='text' id='phone' class='textBox' name='username' style='background-color:rgba(0,0,0,.4)' maxlength='15'/>
+	</div>
+	<!-- Textbox for the Alternate email -->
+	<div class='uniqueArea' style='width:60%;float:right;display:inline-block;'>
+		<label for='email' style="color: white;font-family:Arial;font-size:12px;">Alternate Email:</label>
+		<input type='text' id='email' class='textBox' name='title' style='background-color:rgba(0,0,0,.4)'/>
+	</div>
+</div><br>
+<!-- Textbox for the Room Number -->			
+<div class='uniqueArea' style='margin-left:2.5%;width:95%;'>
+	<div class='uniqueArea' style='width:35%;float:left;'>
+		<label for='roomNumber' style="color: white;font-family:Arial;font-size:12px;">Room Number:</label>
+		<input type='text' id='roomNumber' class='textBox' name='roomNumber' style='background-color:rgba(0,0,0,.4)'/>
+	</div>
+	<!-- Textbox for the building -->
+	<div style='width:60%;float:right;'>
+		<label for='roomNumber' style="color: white;font-family:Arial;font-size:12px;">Choose a building:</label>
+		<select id='dropdown' class='textBox' style='color:white;background-color:rgba(0,0,0,.4);display:inline-block'>
+			<option selected disabled value=''></option>
+		</select>
+	</div>
+</div><br>
+<!-- Textbox for the OUNetID -->
+<div class='buttonDiv' id='submit'>
+	<input type='submit' class='submitButton' value='Submit Ticket' onclick='reviewTicket()'/>
+</div><br>
