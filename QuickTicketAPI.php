@@ -65,7 +65,7 @@ class quickTicketAPI{
 	}
 
 	function getTeamAssignment($fourByFour, $token) {
-		$url = "https://ou.cherwellondemand.com/CherwellAPI/api/V1/getsearchresults";
+		$url = "CHERWELL_URL";
 		$headers = array(
 			"Authorization: Bearer $token",
 			"Content-Type: application/json"
@@ -417,7 +417,7 @@ class quickTicketAPI{
 
 		//send the request to token giver via cURL
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, 'https://ou.cherwellondemand.com/CherwellAPI/token');
+		curl_setopt($ch, CURLOPT_URL, 'CHERWELL-URL');
 		curl_setopt($ch, CURLOPT_POST, count($fields));
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
