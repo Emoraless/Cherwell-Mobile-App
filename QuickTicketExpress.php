@@ -4,7 +4,7 @@
 	require "..\Includes\QuickTicketApi.php";
 	require "..\Includes\Connection.php";
 
-	//Verifies the OUNetId inserted into the program
+	//Verifies the OId inserted into the program
 
 	$fourfour = $_GET['four'];
 
