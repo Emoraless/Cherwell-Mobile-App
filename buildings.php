@@ -1,7 +1,7 @@
 <?php
 	header('Content-type: application/json');
 	require "..\Includes\Connection.php";
-	$conn = new Connection('slackdb');
+	$conn = new Connection('DB_NAME');
 
 	/*
 		Created to gather the buildings from the database
