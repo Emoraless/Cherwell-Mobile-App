@@ -1,0 +1,62 @@
+<?php
+ 	session_start();
+
+	if(!isset($_SESSION["loggedIn"]) && !$_SESSION["loggedIn"] == TRUE) {
+		$newURL = "SSO_URL";
+		header('Location: '.$newURL);
+	}
+?>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mobile App</title>
+		<link href='./images/favicon.png' rel='shortcut icon'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' type='text/css' href='./css/stylesheet.css' media='all' />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {
+    	$(".loader").fadeOut(1200);
+		});
+		</script>
+		<script type='text/javascript' src='./Sources/WebApi.js'>
+			var userName = '@HttpContext.Current.User.Identity.Name';
+		</script>
+		<script type='text/javascript' src='./Sources/WebApi.js' defer='defer'>
+		</script>
+  </head>
+  <body onload='incidentList()'>
+		<div class="loader"></div>
+		<span style="font-size:30px;cursor:pointer;position:absolute;color:white;" onclick="openNav()">&#9776; </span>
+		<!-- OU header -->
+		<div id='header-content'>
+			<div id='image-container' style="text-align:center;">
+				<img src='./images/transparent-it-logo-white.png' id='ods-logo' alt='Quick-Ticket'/>
+			</div>
+		</div>
+		<div id='content'></div>
+    <div id="mySidenav" class="sidenav">
+			<a id='sidebar-link' href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+			<a id='sidebar-link' href="MOBILE_APP_URL">Home</a>
+			<a id='sidebar-link' href="MOBILE_APP_URL/incident">My Incidents</a>
+			<a id='sidebar-link' href="MOBILE_APP_URL/task">My Tasks</a>
+      <a id='sidebar-link' target="_blank" href="https://www.surveymonkey.com/">Feedback</a>
+			<a id='sidebar-link' href="MOBILE_APP_URL/logout.php">Logout</a>
+		</div>
+		<!-- End page content -->
+		<script>
+			/* Open the sidenav */
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "100%";
+			}
+
+			/* Close/hide the sidenav */
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+
+		</script>
+    </body>
+</html>
