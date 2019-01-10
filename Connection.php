@@ -1,16 +1,6 @@
 <?php
 header('Content-Type: application/JSON');
 
-/**
-	Authors: Nick Peoples, Scott Kannawin
-	
-	Used for connection to a database on the servicesapps server
-	as well as custom functions to interface with certain tables
-
-*/
-
-
-
 // Connection class
 class Connection {
 	private $serverName = "SERVER-NAME";
